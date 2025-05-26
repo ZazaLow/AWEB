@@ -1,103 +1,29 @@
-commit 2cbfaf8390bdf6bdca06929044516036a93a0d48
-Author: Izan Pérez <izanperez986@gmail.com>
-Date:   Tue May 20 18:33:40 2025 +0200
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?) git init ¿Cómo hago para que un directorio deje de ser controlado por git?
 
-    sandwich feo
+rm -rf .git (Este comando elimina todo el historial y configuración de Git en ese directorio). • Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git? No automáticamente. Debes agregarlo manualmente con git add para que Git lo controle. • ¿Qué comando se utiliza para agregar un archivo al repositorio local? Se usa:
 
-commit 110bee5a69d5e4308d81a4701d456a1c1738960d
-Author: Izan Pérez <izanperez986@gmail.com>
-Date:   Tue May 20 18:24:37 2025 +0200
+git add • ¿Cómo determino qué archivos fueron modificados? Ejecuta:
 
-    agrego la salsa
+git status • ¿Qué comando se utiliza para hacer un commit? Se usa:
 
-commit 9c432dc36417de6cf47f5425ae49f6eed0fbd70b
-Author: Izan Pérez <izanperez986@gmail.com>
-Date:   Tue May 20 18:20:36 2025 +0200
+git commit -m "Mensaje descriptivo" • ¿En sus propias palabras, qué es un commit? Un commit es un punto de guardado que registra los cambios realizados en los archivos del proyecto. Es como tomar una foto del estado actual del trabajo para poder volver a ella más tarde si es necesario.
 
-    Agregar sandwitch.txt
+EJERCICIO PRACTICO
 
-commit 27ae2d4633df71d57f8caf6eba02df8e94cf9d91
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 12:23:35 2025 +0200
+Ejer3:que al hacer git status de estar en rojo pasa a verde(muestra el estado actual del repositorio y el archivo.
 
-    Update README.md
+Ejer5: Antes de ejecutar git add sandwich.txt, el comando git status muestra el archivo "sandwich.txt" como "no rastreado" o "modificado pero no añadido".
 
-commit f6afc2592973b03bb453145cc563f6f7074c9a7f
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 12:19:50 2025 +0200
+Ejer7: El comando git status dice que no hay cambios,
 
-    Add files via upload
+Ejer9:Al ejecutar git log muestra los commit que hay y la información sobre ellos quien los a creado y cuando y empieza por el que se a creado mas recientemente.
 
-commit 9d8e0e2b6cf30f98c92b1a78f14aeeee44b4e3bb
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 12:18:57 2025 +0200
+Ejer10:Con el git log----online dice las acciones que se a realizadoy con git log --stat,Muestra el historial de commits con un resumen de los archivos modificados, líneas añadidas y eliminadas en cada uno.
 
-    Delete tallergitprog1-main directory
+Ejer11:Es una ventana que muestra los cambios que se producen en el repositorio del codigo en rojo:lineas eliminadas en verde:lineas añadidas en amarrillo:líneas modificadas
 
-commit 88fecc16a122d865f9d8558fc4cef1eedd2f209b
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 12:17:39 2025 +0200
+Ejer14:Git detecta que se ha echo una cambio de nombre del archivo y lo muestra como una una operación de renombre y despues del git status no dice que no hay cambios pendientesy el git log ---oneline aparece un nuevo commit con su hash y mensaje
 
-    Add files via upload
+Ejer15: En git status aparece el archivo pero con la palabra deleted delante y con git –log oneline aparece un nuevo commit que indica que se a eliminado.
 
-commit 3a7d2855c5b4f45be24cdfef97d8cbde7affedc9
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 11:27:56 2025 +0200
-
-    Update estilos
-    
-    Añado 6 g extra al final de la línea 4
-
-commit dac6aed44b369c825b775155c6083a34a8410c69
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 11:15:24 2025 +0200
-
-    Rename estilos.md to estilos
-
-commit b15c251307a269207133e51078f926c31846f28d
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 10:42:50 2025 +0200
-
-    Update estilos.md
-    
-    Añado un segundo título.
-    Borro la palabra grammar de la primera línea
-
-commit 4327ba9c46eff663d9662d0b0f9eabb8a2157597
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 10:32:24 2025 +0200
-
-    Update and rename archivo_1.md to estilos.md
-
-commit 67da0bbeaf54bd874566cea5341487697160f75f
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 12 10:27:12 2025 +0200
-
-    Create archivo_1.md
-
-commit 167f211b33d87aeb4f1ed06c8e60850b41d849fb
-Merge: 175fc71 ddcaf01
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon May 5 11:25:10 2025 +0200
-
-    Merge pull request #1 from Lidia-lcm/rama-local
-    
-    Creacion de carpeta y subida de imagen
-
-commit ddcaf01a24fc71fe4a48588bc371ccdcccebd1a1
-Author: Lidia La Cal <lidialacalm@gmail.com>
-Date:   Mon May 5 11:00:01 2025 +0200
-
-    Creacion de carpeta y subida de imagen
-
-commit 175fc71ddee6effbea666b05d598d1ed758562d7
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon Apr 28 10:40:08 2025 +0200
-
-    Update README.md
-
-commit 7103b6ae7bf65fa34a6b34d88384e08cb3aa6234
-Author: Lidia-lcm <lidialacalm@gmail.com>
-Date:   Mon Apr 28 10:01:29 2025 +0200
-
-    Initial commit
+Ejer16:Se ve las acciones que se han realizado y el cambio de nombre y cual se ha eliminado.
